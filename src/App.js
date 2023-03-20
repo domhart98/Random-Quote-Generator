@@ -4,6 +4,7 @@ import './App.css';
 import { TwitterIcon } from 'react-share';
 
 function HandleNewQuote() {
+  // eslint-disable-next-line
   const [value, setValue] = useState(0);
   return () => setValue(value => Math.floor(Math.random() * Quotes.length));
 }
