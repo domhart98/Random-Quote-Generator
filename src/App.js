@@ -18,8 +18,12 @@ function RandomQuoteGenerator () {
   let rnd = Math.floor(Math.random() * Quotes.length)
   return(
     <div className="container" id="quote-box">
-      <div id="text">"{quotes[rnd].Quote}"</div>
-      <div id="author">~ {quotes[rnd].Author}</div>
+      <h2 className="title">Random Quote Generator</h2>
+      <div id="text">
+        <div id="quote">"{quotes[rnd].Quote}"</div>
+        <div id="author">~ {quotes[rnd].Author}</div>
+      </div>
+      
       <div  className="row" id="buttons">
       <div className="col-2"></div>
         <div className="col-4" align="center">

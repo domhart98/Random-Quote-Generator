@@ -10,9 +10,13 @@
     margin-right: 40px;
     padding: 20px;
     border: 2px pink double;
+    background-color: rgb(252, 224, 183);
+    text-align: center;
 }
 #text{
     font-family:  serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 20px;
+    font-size: 1.4em;
 }
 #author{
     font-weight: bold;
@@ -38,4 +42,8 @@
 }
 #tweet-quote-button:hover{
     scale: 0.9
+}
+.title{
+    text-decoration: underline;
+    color: rgb(20,133,158);
 }
