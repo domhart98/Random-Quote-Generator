@@ -2,11 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 //import RandomQuoteGenerator from './randomQuoteGenerator'
-
 //import MarkdownPreviewer from './markdownPreviewer'
 import DrumMachine from './drumMachine'
-
-
 import reportWebVitals from './reportWebVitals';
 
 
