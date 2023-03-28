@@ -2,13 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 //import RandomQuoteGenerator from './randomQuoteGenerator'
+
+//import MarkdownPreviewer from './markdownPreviewer'
+import DrumMachine from './drumMachine'
+
 import MarkdownPreviewer from './markdownPreviewer'
+
 import reportWebVitals from './reportWebVitals';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <MarkdownPreviewer />
+    <DrumMachine />
   </React.StrictMode>
 );
 
