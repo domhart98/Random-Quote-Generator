@@ -1,0 +1,56 @@
+#ed{
+    padding: 0px;
+    padding-left: 12px;
+}
+#prev{
+    padding: 0px;
+}
+
+#editor{
+    width: 100%;
+    height: 80vh;
+    position: sticky;
+    top: 20vh;
+    left: 0vh;
+    padding-left: 10px;
+}
+#editor-header{
+    position:sticky;
+    width: 100%;
+    height: 20vh;
+    top: 0px;
+   margin: 0px;
+    border: 1px solid black;
+    background-color: aqua;
+}
+#editor-header>img{
+    width: 40px;
+    height: auto;
+    padding-left: 20px;
+}
+#editor-header>h1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+#preview{
+    position: sticky;
+    overflow-x: hidden;
+    padding-left: 10px;
+}
+#preview-header{
+    padding: 0px;
+    height: 20vh;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+}
+
+
+#root{
+    display:block;
+    
+}
