@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import RandomQuoteGenerator from './App'
+import RandomQuoteGenerator from './randomQuoteGenerator'
+import MarkdownPreviewer from './markdownPreviewer'
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RandomQuoteGenerator />
+    <MarkdownPreviewer />
   </React.StrictMode>
 );
 
