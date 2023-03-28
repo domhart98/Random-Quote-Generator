@@ -6,7 +6,6 @@ import './index.css';
 //import MarkdownPreviewer from './markdownPreviewer'
 import DrumMachine from './drumMachine'
 
-import MarkdownPreviewer from './markdownPreviewer'
 
 import reportWebVitals from './reportWebVitals';
 
