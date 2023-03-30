@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+/*import { useCallback, useEffect, useState } from 'react';
 import './drumMachine.css'
 
 const sounds = [
@@ -110,4 +110,4 @@ const DrumMachine = () =>{
         </div>
     )
 }
-export default DrumMachine;
+export default DrumMachine;*/
