@@ -6,7 +6,6 @@ const Calculator = () => {
     const [equation, setEquation] = useState(["0"])
     const [isDecimal, setIsDecimal] = useState(false)
     const [beginsWithZero, setBeginsWithZero] = useState(true)
-    const [consecutiveOperators, setConsecutiveOperators] = useState(false)
     
     const handleNumericButtonPress = (e) =>{
 
@@ -17,7 +16,7 @@ const Calculator = () => {
             else{
                 setEquation(current => [...current, e.target.innerText])
                 setBeginsWithZero(false)
-                setConsecutiveOperators(false)
+        
             }
             
         }

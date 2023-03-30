@@ -29,17 +29,17 @@
     width: 100%;
     margin: 15px;
     align-self: center;
-    height: 50px;
+    height: 40px;
     border-radius: 8px;
     background-color: crimson;
 }
 .col-3>button{
-    width: 100%;
+    width: 90%;
     display: block;
     margin: 0px;
     margin-top: 10px;
-    height: 50px;
-    font-size: 1.8em;
+    height: 40px;
+    font-size: 1.6em;
     border-radius: 8px;
 }
 .numeric-button{
