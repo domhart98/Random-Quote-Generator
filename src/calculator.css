@@ -1,10 +1,7 @@
-#root{
-    
-}
+
 #calculator{
     position: relative;
     border: 1px solid black;
-    margin-top: 10vh;
     margin-left: 25vw;
     height: 80vh;
     width: 50vw;
