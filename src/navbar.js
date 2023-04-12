@@ -1,5 +1,5 @@
 import React from 'react'
-//import Link from './link.js'
+import Link from './link.js'
 import './navbar.css'
 
 const Navbar = () =>{
@@ -8,19 +8,19 @@ const Navbar = () =>{
             <nav className="nav-menu">
                 <ul>
                     <li className="nav-item">
-                        <a href="/" className="">Random Quote Generator</a>
+                        <Link href="/" className="">Random Quote Generator</Link>
                     </li>
                     <li className="nav-item">
-                        <a href="/markdown" className="">Markdown Previewer</a>
+                        <Link href="/markdown" className="">Markdown Previewer</Link>
                     </li>
                     <li className="nav-item">
-                        <a href="/drum" className="">Drum Machine</a>
+                        <Link href="/drum" className="">Drum Machine</Link>
                     </li>
                     <li className="nav-item">
-                        <a href="/calculator" className="">Calculator</a>
+                        <Link href="/calculator" className="">Calculator</Link>
                     </li>
                     <li className="nav-item">
-                        <a href="/clock" className="">Pomodoro Clock</a>
+                        <Link href="/clock" className="">Pomodoro Clock</Link>
                     </li>
                 </ul>
             </nav>
