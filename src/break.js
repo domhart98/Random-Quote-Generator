@@ -18,15 +18,15 @@ function Break ({length, setLength, setSeconds}) {
         <div id="break-container">
             <div className="increment-label" id="button-label"> BUTTON LENGTH</div>
             <div className="increment-row">
-                <a className="increment-button" id="break-decrement" onClick={decrementBreak}>
+                <button className="crement-button" id="break-decrement" onClick={decrementBreak}>
                     <img className="control-button" src="./subtract-icon.png" alt=""/>
-                </a>
+                </button>
                 <div className="length-display" id="button-length">
                     <p>{length}</p>
                 </div>
-                <a className="decrement-button" id="break-increment" onClick={incrementBreak}>
+                <button className="crement-button" id="break-increment" onClick={incrementBreak}>
                     <img className="control-button" src="./add-icon.png" alt=""/>
-                </a>
+                </button>
             </div>
         </div>
     )

@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import Quotes from './quotes.json';
 import './randomQuoteGenerator.css';
-import { TwitterIcon } from 'react-share';
 
 function HandleNewQuote() {
   // eslint-disable-next-line

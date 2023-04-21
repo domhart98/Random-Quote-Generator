@@ -19,15 +19,15 @@ function Session ({length, setLength, setSeconds}){
         <div id="session-container">
             <div className="increment-label" id="session-label"> SESSION LENGTH</div>
             <div className="increment-row">
-                <a className="increment-button" id="session-decrement" onClick={decrementSession}>
+                <button className="crement-button" id="session-decrement" onClick={decrementSession}>
                     <img className="control-button" src="./subtract-icon.png" alt=""/>
-                </a>
+                </button>
                 <div className="length-display" id="session-length">
                     <p>{length}</p>
                 </div>
-                <a className="decrement-button" id="session-increment" onClick={incrementSession}>
+                <button className="crement-button" id="session-increment" onClick={incrementSession}>
                     <img className="control-button" src="./add-icon.png" alt=""/>
-                </a>
+                </button>
             </div>
         </div>
     )

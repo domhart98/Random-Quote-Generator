@@ -32,12 +32,17 @@
     margin: auto;
     font-size: 3vw;
 }
-
+.crement-button{
+    border: none;
+    background-color: white;
+}
 .increment-button{
     width: 40%;
     display: flex;
     align-items: center;
     justify-content: right;
+    border: none;
+
 }
 .decrement-button{
     width: 40%;
