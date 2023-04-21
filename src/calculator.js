@@ -82,38 +82,38 @@ const Calculator = () => {
     return(
         <div className="" id="calculator">
             
-            <div className="container-fluid"><div className="" id="display">
-                {equation}
-            </div></div>
             
-            <div className="container-fluid"><div className="row gx-0" >
+            <div className="" id="display">{equation}</div>
+            
+            
+            
             <button className="" id="clear" onClick={handleClear}>AC</button>
-            </div></div>
-            <div className="container-fluid"><div className="row gx-0" >
-                <div className="col-3"><button className="numeric-button" id="one" onClick={handleNumericButtonPress}>1</button></div>
-                <div className="col-3"><button className="numeric-button" id="two" onClick={handleNumericButtonPress}>2</button></div>
-                <div className="col-3"><button className="numeric-button" id="three" onClick={handleNumericButtonPress}>3</button></div>
-                <div className="col-3"><button className="function-button" id="add" onClick={handleFunctionButtonPress}>+</button></div>
-            </div></div>
-            <div className="container-fluid"><div className="row" >
-                <div className="col-3"><button className="numeric-button" id="four" onClick={handleNumericButtonPress}>4</button></div>
-                <div className="col-3"><button className="numeric-button" id="five" onClick={handleNumericButtonPress}>5</button></div>
-                <div className="col-3"><button className="numeric-button" id="six" onClick={handleNumericButtonPress}>6</button></div>
-                <div className="col-3"><button className="function-button" id="subtract" onClick={handleFunctionButtonPress}>-</button></div>
-            </div></div>
-            <div className="container-fluid"><div className="row" >
-                <div className="col-3"><button className="numeric-button" id="seven" onClick={handleNumericButtonPress}>7</button></div>
-                <div className="col-3"><button className="numeric-button" id="eight" onClick={handleNumericButtonPress}>8</button></div>
-                <div className="col-3"><button className="numeric-button" id="nine" onClick={handleNumericButtonPress}>9</button></div>
-                <div className="col-3"><button className="function-button" id="multiply" onClick={handleFunctionButtonPress}>*</button></div>
-            </div></div>
             
-            <div className="container-fluid"><div className="row" >
-                <div className="col-3"><button className="numeric-button" id="decimal" onClick={handleNumericButtonPress}>.</button></div>
-                <div className="col-3"><button className="numeric-button" id="zero" onClick={handleNumericButtonPress}>0</button></div>
-                <div className="col-3"><button className="function-button" id="equals" onClick={handleEquals}>=</button></div>
-                <div className="col-3"><button className="function-button" id="divide" onClick={handleFunctionButtonPress}>/</button></div>
-            </div></div>
+            <div className="row-custom">
+                <div className="button-container"><button className="numeric-button" id="one" onClick={handleNumericButtonPress}>1</button></div>
+                <div className="button-container"><button className="numeric-button" id="two" onClick={handleNumericButtonPress}>2</button></div>
+                <div className="button-container"><button className="numeric-button" id="three" onClick={handleNumericButtonPress}>3</button></div>
+                <div className="button-container"><button className="function-button" id="add" onClick={handleFunctionButtonPress}>+</button></div>
+            </div>
+            <div className="row-custom">
+                <div className="button-container"><button className="numeric-button" id="four" onClick={handleNumericButtonPress}>4</button></div>
+                <div className="button-container"><button className="numeric-button" id="five" onClick={handleNumericButtonPress}>5</button></div>
+                <div className="button-container"><button className="numeric-button" id="six" onClick={handleNumericButtonPress}>6</button></div>
+                <div className="button-container"><button className="function-button" id="subtract" onClick={handleFunctionButtonPress}>-</button></div>
+            </div>
+            <div className="row-custom">
+                <div className="button-container"><button className="numeric-button" id="seven" onClick={handleNumericButtonPress}>7</button></div>
+                <div className="button-container"><button className="numeric-button" id="eight" onClick={handleNumericButtonPress}>8</button></div>
+                <div className="button-container"><button className="numeric-button" id="nine" onClick={handleNumericButtonPress}>9</button></div>
+                <div className="button-container"><button className="function-button" id="multiply" onClick={handleFunctionButtonPress}>*</button></div>
+            </div>
+            
+            <div className="row-custom">
+                <div className="button-container"><button className="numeric-button" id="decimal" onClick={handleNumericButtonPress}>.</button></div>
+                <div className="button-container"><button className="numeric-button" id="zero" onClick={handleNumericButtonPress}>0</button></div>
+                <div className="button-container"><button className="function-button" id="equals" onClick={handleEquals}>=</button></div>
+                <div className="button-container"><button className="function-button" id="divide" onClick={handleFunctionButtonPress}>/</button></div>
+            </div>
                 
         </div>
     )

@@ -6,44 +6,54 @@
     position: relative;
 }
 #quote-box{
-    margin-left: 40px;
-    margin-right: 40px;
-    padding: 20px;
+    width: 80%;
+    padding: 5vw;
+    margin: auto;
     border: 2px pink double;
     background-color: rgb(252, 224, 183);
     text-align: center;
 }
+.title{
+    text-decoration: underline;
+    text-underline-offset: 1vw;
+    color: rgb(20,133,158);
+    font-size: 3vw;
+}
 #text{
-    font-family:  serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    padding: 20px;
-    font-size: 1.4em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding: 3vw;
+    font-size: 2vw;
 }
 #author{
-    font-weight: bold;
+    font-size: 1.8vw;
+    font-weight: lighter;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-#new-quote{
-    width: 100px;
-    height: 100px;
+#quote-box>#buttons-container{
+    display: flex;
+    justify-content: center;
+}
+.round-button{
+    width: 12vw;
+    aspect-ratio: 1/1;
     border-radius: 50%;
+    display: block;
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+.round-button:hover{
+    scale: 0.9;
+    transition: 0.5s;
+}
+
+#new-quote{
     background-color: darkcyan;
     border: none;
     color: white;
+    font-size: 2vw;
 }
 #new-quote:hover{
     background-color: aquamarine;
-    scale: 0.9;
 }
-#tweet-quote-button{
-    display: flex;
-    width: 100px;
-    height: 100px;
-}
-#tweet-quote-button:hover{
-    scale: 0.9
-}
-.title{
-    text-decoration: underline;
-    color: rgb(20,133,158);
-}
+

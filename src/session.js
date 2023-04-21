@@ -16,12 +16,18 @@ function Session ({length, setLength, setSeconds}){
         }
     }
     return(
-        <div className="col-6" id="session-container">
-            <div id="session-label"> Session length</div>
-            <div className="row">
-                <button className="col-4" id="session-decrement" onClick={decrementSession}>-</button>
-                <div className="col-4" id="session-length">{length}</div>
-                <button className="col-4" id="session-increment" onClick={incrementSession}>+</button>
+        <div id="session-container">
+            <div className="increment-label" id="session-label"> SESSION LENGTH</div>
+            <div className="increment-row">
+                <a className="increment-button" id="session-decrement" onClick={decrementSession}>
+                    <img className="control-button" src="./subtract-icon.png" alt=""/>
+                </a>
+                <div className="length-display" id="session-length">
+                    <p>{length}</p>
+                </div>
+                <a className="decrement-button" id="session-increment" onClick={incrementSession}>
+                    <img className="control-button" src="./add-icon.png" alt=""/>
+                </a>
             </div>
         </div>
     )

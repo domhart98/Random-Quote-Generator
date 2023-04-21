@@ -43,8 +43,8 @@ Some inline code: \`<addr>\` .
 
 ### Bold Text
 
-I just love **bold text**.
-`;
+I just love **bold text**.`;
+
     const [markedValue, setMarkedValue] = 
     useState(placeholder);
 
@@ -61,26 +61,22 @@ I just love **bold text**.
     }
 
     return(
-        <div>
-            <div className="row">
-                <div className="col-6" id="ed">
-                    <div className="row" id="editor-header">
-                        <img className="col-3" src="./logo-markdown.svg" alt="markdown logo"/>
-                        <h1 className="col-9">Markdown Editor</h1>
-                    </div>
-                    <textarea id="editor" value={markedValue} onChange={updateMarkdownValue}>
-                    </textarea>
+        <div id="markdown-previewer">
+            <div id="editor">
+                <div id="editor-header">
+                    <img src="./logo-markdown.svg" alt="markdown logo"/>
+                    <h1>MARKDOWN EDITOR</h1>
                 </div>
-                <div className="col-6" id="prev">
-                    <div className="" id="preview-header">
-                        <h1>Preview</h1>
-                    </div>
-                    <div id="preview" dangerouslySetInnerHTML={getMarkdownValue()}>
-                    </div> 
-                </div>
+                <textarea id="editor-body" value={markedValue} onChange={updateMarkdownValue}>
+                </textarea>
             </div>
-            
-            
+            <div id="previewer">
+                <div className="" id="previewer-header">
+                    <h1>PREVIEWER</h1>
+                </div>
+                <div id="previewer-body" dangerouslySetInnerHTML={getMarkdownValue()}>
+                </div> 
+            </div>
         </div>
     )
 }

@@ -5,6 +5,7 @@ import Session from './session'
 import Timer from './timer'
 import sound from './mixkit-short-rooster-crowing-2470.wav'
 
+
 function Clock() {
     const [breakLength, setBreakLength] = useState(1)
     const [sessionLength, setSessionLength] = useState(1)
@@ -62,14 +63,23 @@ function Clock() {
 
     return(
         <div id="clock">
-            <div className="row increment-container">
-                <Session className="col-6" length={sessionLength} setLength={setSessionLength} setSeconds={setSeconds}/>
-                <Break className="col-6" length={breakLength} setLength={setBreakLength} setSeconds={setSeconds}/>
+            <h1>POMODORO CLOCK</h1>
+            <div id="increment-container">
+                <Session length={sessionLength} setLength={setSessionLength} setSeconds={setSeconds}/>
+                <Break length={breakLength} setLength={setBreakLength} setSeconds={setSeconds}/>
             </div>
             
             <Timer seconds={seconds} mode={mode}/>
-            <button id="reset" onClick={reset}>reset</button>
-            <button id="start_stop" onClick={start}>start/stop</button>
+
+            <div id="buttons-container">
+                <div id="start-stop" onClick={start}>
+                    <img className="controls" src="./start-stop-icon.png" alt=""/>
+                </div>
+                <div id="reset" onClick={reset}>
+                    <img className="controls" src="./reset-icon.png" alt=""/>
+                </div>
+            </div>
+            
             <audio id="beep" ref={audio}>
                 <source src={sound}/>
             </audio>

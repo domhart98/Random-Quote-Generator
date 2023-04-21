@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from 'react';
 import './drumMachine.css'
 
+
 const sounds = [
     {keyCode: 81,
         key: 'Q',
@@ -100,10 +101,14 @@ const DrumMachine = () =>{
     useEffect(() => {
         document.addEventListener("keydown", handleKeyDown)
     }, [handleKeyDown])
+   
     return(
         <div id="drum-machine">
-            <h1>Drumkit</h1>
-            <div id="drums">
+            <div id="drum-header">
+                <h1>DRUMKIT - <span className="italic">click buttons or hit keys to play sounds</span></h1>
+            </div>
+            
+            <div id="drum-body">
 
                 {sounds.map((sound, i) => (
                     <button className="drum-pad" id={sound.id}  key={sound.key} onClick={() => playSound(sound.key)}>
@@ -114,7 +119,6 @@ const DrumMachine = () =>{
                 <div id="display">
                     {display}
                 </div>
-                
             </div>
         </div>
     )

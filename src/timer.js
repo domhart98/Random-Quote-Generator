@@ -12,8 +12,8 @@ const Timer = ({seconds, mode}) =>{
 
     return (
         <div id="timer-container">
-            <h2 id="timer-label">{mode}</h2>
             <div id="timer">
+                <h2 id="timer-label">{mode === true ? "SESSION" : "BREAK"}</h2>
                 <div id="time-left">
                     {displayTimer()}
                 </div>
